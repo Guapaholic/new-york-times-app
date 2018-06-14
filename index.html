@@ -8,15 +8,15 @@
 </head>
 
 <body>
+    <div class="container">
     <header id="bannerheader">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">New York Times</a>
-            </nav>
+        <div class="jumbotron">
+            <div class="text-center">
+            <h1 class="display-4">New York Times</h1> 
+            <p class="lead">World's first online database of your most up-to-date articles about cats.</p>
+        </div>
         </div>
     </header>
-
-    <br>
 
     <div class="card">
         <div class="card-body">
@@ -29,21 +29,21 @@
                 <div id="searchTerm">
                     <label for="exampleInputName1">Search Term: </label>
                     <p>
-                        <input type="name" class="form-control" id="exampleInputName1" aria-describedby="NameHelp" placeholder="Enter Term">
+                        <input type="name" class="form-control" id="searchTermField" aria-describedby="NameHelp" placeholder="Enter Term">
                     </p>
                 </div>
 
                 <div id="retrieveRecords">
                     <label for="exampleInputEmail1">Number of Records to Retrieve: </label>
                     <p>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Number Here">
+                        <input type="email" class="form-control" id="retrieveRecordsField" aria-describedby="emailHelp" placeholder="Enter Number Here">
                     </p>
                 </div>
 
                 <div id="startYear">
                     <label for="exampleInputMessage1">Start Year (Optional): </label>
                     <p>
-                        <input type="Message" class="form-control" id="exampleInputMessage1" aria-describedby="NameHelp" placeholder="Enter Year Here">
+                        <input type="Message" class="form-control" id="startYearField" aria-describedby="NameHelp" placeholder="Enter Year Here">
 
                     </p>
                 </div>
@@ -51,7 +51,7 @@
                 <div id="endYear">
                     <label for="exampleInputMessage1">End Year (Optional): </label>
                     <p>
-                        <input type="Message" class="form-control" id="exampleInputMessage1" aria-describedby="NameHelp" placeholder="Enter Year Here">
+                        <input type="Message" class="form-control" id="endYearField" aria-describedby="NameHelp" placeholder="Enter Year Here">
                     </p>
                 </div>
                 <br>
@@ -61,4 +61,5 @@
         </div>
     </div>
     </form>
+    </div>
 </body>
