@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
 </head>
 
 <body>
@@ -48,19 +53,15 @@
                         </p>
                     </div>
 
-                    <div id="endYear">
-                        <label for="exampleInputMessage1">End Year (Optional): </label>
-                        <p>
-                            <input type="Message" class="form-control" id="endYearField" aria-describedby="NameHelp" placeholder="Enter Year Here">
-                        </p>
-                    </div>
-                    <br>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                    <button type="button" class="btn btn-primary">Clear Results</button>
-
-            </div>
-        </div>
-        </form>
+                <div id="endYear">
+                    <label for="exampleInputMessage1">End Year (Optional): </label>
+                    <p>
+                        <input type="Message" class="form-control" id="endYearField" aria-describedby="NameHelp" placeholder="Enter Year Here">
+                    </p>
+                </div>
+                <br>
+                <button id="submitButton" type="button" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary">Clear Results</button>
 
         <div class="card">
             <div class="card-body">
