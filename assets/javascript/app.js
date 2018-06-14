@@ -57,7 +57,7 @@ $(function () {
             snippetPar.text(snippet[i])
             newDiv.append(snippet[i] + "<br>")
             newLink.attr("href", url[i])
-            newLink.text("link")
+            newLink.text("Link")
             newDiv.append(newLink)
             $("#results-div").append(newDiv)
         }
