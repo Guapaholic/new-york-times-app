@@ -14,13 +14,23 @@ $(function () {
     beginYear = $("#startYearField").val() + "0101"
     endYear = $("#endYearField").val() + "0101"
 
+    if(beginYear.length != 8)
+    {
+      beginYear = "19800101"
+    }
+
+    if(beginYear.length != 8)
+    {
+      endYear = "201800101"
+    }
+
 
 
     url += '?' + $.param({
       'api-key': "0aed713129c74e009a556835193f4052",
-      'q': query
-      //   'end_date': endYear,
-      //   'begin_date': beginDate,
+      'q': query,
+        'end_date': endYear,
+        'begin_date': beginDate,
 
     });
 
