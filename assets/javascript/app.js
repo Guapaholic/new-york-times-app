@@ -1,11 +1,18 @@
 $(function () {
 
 
-  var query
+  var query;
+  var numOfResults = 0
   // var endYear = "20170101";
   // var beginYear = "20180613";
   var numberOfRecords;
   var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+
+  $("#clear").on("click", function()
+  { 
+    $(".list-group").empty()
+    $("#results").addClass("d-none")
+  })
 
   $("#submitButton").on("click", function () {
     event.preventDefault()
@@ -65,7 +72,7 @@ $(function () {
         var article = $("<a>")
         article.attr("href", arr[i].web_url)
         article.attr("target", "_blank")
-        article.attr("class", "list-group-item list-group-item-action flex-column align-items-start")
+        article.attr("class", "list-group-item list-group-item-action flex-column align-items-start mb-2")
 
         article.append($("<div>").attr("class", "d-flex w-100 justify-content-between")
           .append($("<h5>").append(arr[i].headline.main).attr("class", "mb-1"))
